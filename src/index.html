@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
 <head>
     <meta charset="UTF-8"/>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.a0f5bb8c.ico"/>
     <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
-    <title>HMCP</title>
+    <title>WebGAL</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
-  <script type="module" crossorigin src="./assets/index.65568ee6.js"></script>
-  <link rel="stylesheet" href="./assets/index.e5290b91.css">
+  <script type="module" crossorigin src="./assets/index.88085f27.js"></script>
+  <link rel="stylesheet" href="./assets/index.e47dd064.css">
 </head>
 <body>
 <!--快速显示落地页，让用户感知不到加载的过程-->
+<div id="ebg"></div>
 <div id="Title_enter_page" onclick="enter()" style="
-            width: 1600px;
-            height: 900px;
+            width: 2560px;
+            height: 1440px;
             overflow: hidden;
             position: absolute;
             top: 0;
@@ -47,9 +48,10 @@
     top: 0;
     height: 100%;
     opacity: 1;
+    font-size: 175%;
     transition: opacity 1s;
     z-index: 15;
-    font-family: '楷体',Georgia,serif">
+    font-family: '思源宋体',Georgia,serif">
         <div class="toCenter" style="
             width: 100%;
             height: 100%;
@@ -57,11 +59,12 @@
             justify-content: center;
             align-items: center;
 ">
-            <div class="StartButton" style="font-size: xx-large;
+            <div class="StartButton" style="
             letter-spacing: 0.25em ;
             padding: 2em 2em 2em 2em;
             text-shadow: 0 0 30px rgba(0,0,0,0.5);
             transition: text-shadow 1s;
+            font-size: 175%;
 ">
                 PRESS THE SCREEN TO START
             </div>
@@ -78,13 +81,33 @@
                 Powered by <a href="https://github.com/MakinoharaShoko/WebGAL" onclick="jump('https://github.com/MakinoharaShoko/WebGAL')">WebGAL</a> Framework
             </div>
             <div>
-                Made with ❤ by <!--<a href="https://github.com/MakinoharaShoko" onclick="jump('https://github.com/MakinoharaShoko')">-->Tokisakix</a>
+                Made with ❤ by <a href="https://github.com/MakinoharaShoko" onclick="jump('https://github.com/MakinoharaShoko')">Mahiru</a>
             </div>
         </div>
     </div>
 </div>
 <div id="root"></div>
 
+<script>
+  /**
+   * 注册 Service Worker
+   */
+
+  const u = navigator.userAgent;
+  const isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); // 判断是否是 iOS终端
+  if ('serviceWorker' in navigator && !isIOS) {
+    navigator.serviceWorker
+    .register('./webgal-serviceworker.js', { scope: './assets' })
+    .then(function (reg) {
+      // registration worked
+      console.log('Registration succeeded. Scope is ' + reg.scope);
+    })
+    .catch(function (error) {
+      // registration failed
+      console.log('Registration failed with ' + error);
+    });
+  }
+</script>
 <script>
     let enterPromise=new Promise(res=>window.enterPromise=res)
     let renderPromise=new Promise(res=>window.renderPromise=res)
@@ -98,7 +121,7 @@
             'bubbles': true,
             'cancelable': true,
         });
-        const target = document.getElementById('play_title_bgm_target');
+        const target = document.getElementById('enter_game_target');
         if (target !== null) {
             target.dispatchEvent(event);
         }
@@ -122,6 +145,9 @@
      function jump(url){
          tryToEnter=false;
          window.location=url;
+         setTimeout(() => {
+                tryToEnter=true
+            }, 10);
      }
     /**
      * 点击屏幕，进入引擎主界面
@@ -144,8 +170,8 @@
      * 对标题页进行自动强制缩放
      */
     function resizeTitle() {
-        const targetHeight = 900;
-        const targetWidth = 1600;
+        const targetHeight = 1440;
+        const targetWidth = 2560;
 
         const h = window.innerHeight; // 窗口高度
         const w = window.innerWidth; // 窗口宽度

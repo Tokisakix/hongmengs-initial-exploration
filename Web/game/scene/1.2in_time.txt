@@ -1,0 +1,51 @@
+bgm:学习1.mp3;
+unlockBgm:学习1.mp3 -name=赶忙;
+changeBg:hallway3.jpg -next
+unlockCg:hallway3.jpg -name=风雨走廊1 -series=b;
+清晨6：40:秋风飒飒，吹走了炎夏;
+代之而来的是秋天的凉爽;
+内心OS:欸诶诶？大家怎么都跑起来了？！;
+时间......我看看，这不是还有六分钟吗？;
+是我表慢了吗？还是我不知道的新制度？;
+完蛋，我要成人流的末尾了，跟着跑吧（好不情愿） -step.mp3;
+changeBg:hallway1.jpg -next
+unlockCg:hallway1.jpg -name=走廊1 -series=b;
+桐桐:呼......呼呼......;
+内心OS:我爬上对应的楼层，站在班级门口喘着气;
+明明还有五分钟才响铃好不好......跑啥啊;
+早知道就去买早餐了，现在又累又饿又困，还不如撒了我啊......;
+教室:我修正片刻，走入班级大门;
+changeBg:class3.jpg -next
+unlockCg:class3.jpg -name=上课3 -series=c;
+站在班门口，猛然发现同学们到齐非常多;
+bgm:reading.mp3;
+unlockBgm:reading.mp3 -name=英语;
+他们或俯首案牍中、或嘴里喃喃有词......这与我在外奔波只为不迟到形成了极大的反差;
+科代表在讲台上开电脑，同学们都在准备早读;
+桐桐:大家为什么都那么认真......而我随便翻开课本就是没背过的内容;
+changeFigure:L1.png -next;
+岚岚:怎么才来啊桐桐，得亏我给你备了早饭，没吃吧你;
+桐桐:555我的好同桌，哪怕整个班都在“卷”，还好有你考虑我的早饭......;
+我真的，我哭死......;
+changeFigure:none -next;
+changeFigure:L.png -next;
+老师:桐桐在吗？早读结束后来办公室找我;
+桐桐:在！好的…...老师;
+changeFigure:none -next;
+内心OS:完蛋了T^T，难道说儆猴都是要杀好杀的鸡吗？......;
+bgm:life2.mp3;
+unlockBgm:life2.mp3 -name=白日;
+changeBg:class1.jpg -next
+unlockCg:class1.jpg -name=教室1 -series=c;
+changeFigure:M3.png -next;
+学校的广播:各位好，我是你们的鸣哥，今天早上我......;
+......今早有很多的学生都是跑着冲入教学楼的，说是“一人起跑，全员跟跑”的态势......;
+如果学习也有“跟跑”的行为，我们还愁没有进步吗？;
+要试着去适应你周围的环境，又要试着去对抗你周围的环境......;
+changeFigure:none -next;
+教室:早读终于结束了，那么按照约定......我该去找班主任了;
+内心OS:鸣哥刚刚的一番话是说给大家听的吗？;
+“要试着去适应你周围的环境，又要试着去对抗你周围的环境”;
+他仿佛，在指导着我？;
+也许下一次”跟跑“我们班的同学，会有与众不同的收获？;
+changeScene:1.3day_lazy.txt;

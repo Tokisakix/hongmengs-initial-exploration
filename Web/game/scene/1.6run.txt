@@ -1,0 +1,20 @@
+changeBg:playground3.JPG -next
+unlockCg:playground3.jpg -name=操场3 -series=e;
+桐桐;没事......估计是碳酸饮料发作了......;
+我桐人誓与大部队同生“死”，共存“亡”！ -跑步.mp3;
+changeFigure:L2.png -next;
+岚岚（担心地看着我）:好...好吧。有什么不舒服及时告诉我;
+changeFigure:none -next;
+操场:时间缓慢流逝，我的腿机械地前行，每一步都像是踩在了滚烫的沼泽地里;
+内心OS:早知道刚刚就不买饮料喝了......;
+555;
+操场:对于大部分同学而言，我们在“跑操”;
+但对于我而言;
+我正在体验别人都体验不到的黄金体验......;
+终于，在大家的努力下，我们完成了漂亮的一圈;
+changeFigure:L.png -next;
+体育老师:今天大家的表现都非常不错！没有拖后腿的班级。但是下来集合的速度稍慢，有待改进。好了，解散！;
+changeFigure:none -next;
+满怀欣喜，我在岚岚的“看管”下，又生龙活虎起来，与大家一同回到教室等待上课;
+changeScene:1.7english_work.txt -when=m>0;
+changeScene:1.7english_lazy.txt;

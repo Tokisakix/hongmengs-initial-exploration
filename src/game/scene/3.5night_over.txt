@@ -1,0 +1,15 @@
+bgm:study2.mp3;
+changeBg:classroom1.jpg -next
+unlockCg:classroom1.jpg -name=教室1 -series=c;
+晚上22：20:下课铃响起;
+教室:原本鸦雀无声的教室变得吵闹起来，挪椅子挪凳子的声音此起彼伏;
+我的思绪也从遥远的书海中拉回......;
+同学A:“耶！终于下课了！”;
+同学B:“走啊，一号食堂买烧饼去！”“哎哎哎，帮我带一份青菜粥呗！”;
+同学C:“等等我等等我，我也去倒垃圾！”……;
+教室:教室里充盈着大家闹哄哄的兴奋的声音……;
+changeFigure:L3.png -next;
+岚岚:桐桐，你现在就要回去吗？;
+教室:我的同桌轻轻地用笔碰了碰我;
+changeFigure:none -next;
+choose:留在教室学习:4.1study.txt|去小卖部买宵夜:4.1eat.txt;

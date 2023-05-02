@@ -1,0 +1,43 @@
+bgm:thief1.mp3;
+unlockBgm:thief1.mp3 -name=小心;
+changeBg:clinic.jpg -next;
+unlockCg:clinic.jpg -name=医务室 -series=f;
+桐桐:好...我好像有点不舒服
+跟老师请假后，我在岚岚的搀扶下慢慢挪着去了医务室......;
+changeFigure:X.png -next;
+校医:怎么了？;
+changeFigure:L2.png -next;
+岚岚:校医姐姐你快看看！她可能有点中暑;
+校医:嗯好，这位同学进来，陪伴的同学请现在外面等待;
+岚岚:嗯好;
+changeFigure:X.png -next;
+医务室:一番检查后......;
+校医:刚刚有吃什么东西吗？;
+或者说早餐吃了什么......;
+桐桐:早餐吃的包子......刚刚的话......;
+！;
+Emmm......辣条、雷碧......;
+校医:。;
+那我觉得应该是跑步引发的胀气了，你这个......;
+自己回去休息休息吧;
+下次就别......算了，这也不是什么很大问题，注意就好;
+桐桐:嗯嗯嗯！好的好的Orz;
+changeFigure:none -next;
+没想到居然是这个玩意......千万不能让别人知道了;
+教室:艰难地走出医务室后，岚岚关心起我来;
+changeBg:hallway2.JPG -next
+unlockCg:hallway2.jpg -name=走廊2 -series=c;
+changeFigure:L2.png -next;
+岚岚:桐桐，刚刚是怎么了？你平时体力不是一直都很好的吗？;
+桐桐:额......这个嘛......;
+说是跑步呼吸方法不对，有点痉挛......;
+总之别担心了......啊哈哈;
+岚岚:唔......好吧，要上英语课了哦;
+changeBg:none -next;
+changeFigure:none -next;
+成就:解锁成就“辣条肥宅水，AK伏特加”;
+开发者轶事:我科二第二次考试中途掉线两次，每次都差最后一个项目就通过考试了，结果又要重来一遍，于是我成为全考场唯一一个考一次试走了三遍考场的人，回来问了组里的小伙伴们，发现只有我一个人考驾照系统掉线。。。——负责音乐&音效的仙女;
+changeFigure:none -next;
+changeScene:1.7english_work.txt -when=m>0;
+changeScene:1.7english_lazy.txt;
+

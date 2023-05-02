@@ -1,0 +1,5 @@
+Game_name:鸿萌初辟;
+Game_key:0f35dst;
+Title_img:title.jpg;
+Title_bgm:title.mp3;
+Loading_img:none;
